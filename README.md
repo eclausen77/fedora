@@ -35,7 +35,7 @@ RPM Fusion provides software that Fedora doesn't want to ship. That software is 
 To enable access to both the free and the nonfree repository use the following command: 
 <code>sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm</code>
 
-### AppStream metadata<c
+### AppStream metadata
 RPM Fusion repositories also provide Appstream metadata to enable users to install packages using Gnome Software/KDE Discover. Please note that these are a subset of all packages since the metadata are only generated for GUI packages. 
 <code>sudo dnf groupupdate core</code>
 
