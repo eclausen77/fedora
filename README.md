@@ -52,3 +52,9 @@ This will allows the application using the gstreamer framework and other multime
 <code>sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin</code>
 The following command will install the sound-and-video complement packages needed by some applications:
 <code>sudo dnf groupupdate sound-and-video</code>
+## Install Nvidia Drivers
+### Determining Card Model
+NVIDIA has several driver series, each of which has different hardware support. To determine which driver you need to install, you'll first need to find your graphics card model. 
+<code>/sbin/lspci | grep -e VGA</code>
+### Installing Drivers
+<code>sudo dnf install xorg-x11-drv-nvidia-390xx akmod-nvidia-390xx</code>
